@@ -12,7 +12,19 @@ a {
 
 .sub-heading {
   font-weight: 600;
-  letter-spacing: 3px !important; }
+  letter-spacing: 3px !important;
+  text-transform: uppercase;
+  line-height: 2rem; }
+
+.sub-heading-h1 {
+  font-size: 16px !important;
+  font-weight: 600;
+  letter-spacing: 3px !important;
+  text-transform: uppercase;
+  line-height: 2rem; }
+
+.main-heading-h2 {
+  font-size: 20px; }
 
 .btn {
   text-transform: uppercase !important;
@@ -126,6 +138,19 @@ a {
   box-shadow: none !important;
   outline: none !important; }
 
+.social i {
+  font-size: 16px;
+  color: #fff;
+  background: #2B4060;
+  padding: 12px;
+  width: 40px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center !important; }
+
 header {
   min-height: 300px; }
 
@@ -166,6 +191,15 @@ section {
       min-height: 100vh !important;
       background-position: 50% 50%; } }
 
+.bg-product {
+  background: url("../img/bg-mastery.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media (min-width: 980px) {
+    .bg-product {
+      background-position: center; } }
+
 nav .nav-link {
   color: #fff !important;
   text-transform: uppercase;
@@ -197,18 +231,32 @@ nav .navbar-nav {
   nav .navbar-nav {
     padding: 30px !important; } }
 
-.hero-cta {
-  max-width: 100% !important; }
-  @media (min-width: 980px) {
-    .hero-cta {
-      margin-top: 150px !important;
-      max-width: 90% !important; } }
+@media (min-width: 980px) {
+  .hero-cta {
+    margin-top: 230px !important; } }
 
 .jumbotron {
   background: transparent !important; }
   @media (max-width: 600px) {
     .jumbotron {
       background: rgba(0, 0, 0, 0.4) !important; } }
+
+.about {
+  min-height: 700px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center; }
+  .about .about-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+.product {
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 footer a {
   color: rgba(0, 0, 0, 0.5) !important;
@@ -220,16 +268,3 @@ footer a {
 
 footer a:hover {
   color: #FE7820 !important; }
-
-footer i {
-  font-size: 16px;
-  color: #fff;
-  background: #2B4060;
-  padding: 12px;
-  width: 40px;
-  border-radius: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center !important; }
