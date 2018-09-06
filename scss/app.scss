@@ -1,0 +1,437 @@
+// Author: DesignStories Creative Studio
+// Founder: Salvs Cerera www.salcerera.com
+// Domain: designstories.studio
+// Services: Web Design, Web Development, Branding/Identity Project, Graphic Design.
+// Email: designstoriesph@gmail.com
+
+// Project or Brand specific styling
+
+// Tools (components and layouts)
+
+@import "1-imports";
+
+// Brand Specific UI Components
+
+// Color Scheme
+$primary: #FF5F00;
+$secondary: #2B4060;
+$dark: #333333;
+$nav-dark: #1A1A1A;
+$light: #fff;
+$bg-muted: #F6F6F6;
+
+
+//Typography
+h1,h2,h3,h4 {
+    font-weight: 600 !important;
+}
+
+.section-heading {
+    padding: 20px;
+    @media(min-width: 980px) {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+a {
+    color: $primary;
+    transition: color 0.2s ease-in-out !important;
+}
+
+a:hover {
+    color: rgba($color: $primary, $alpha: 0.7) !important;
+}
+
+// Buttons
+
+.btn {
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    letter-spacing: 2px;
+    box-shadow: 0px 10px 42px $muted-4;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+
+.btn-sm {
+    font-size: 0.8rem !important;
+    min-width: 100px;
+    font-weight: 600 !important;
+
+    @media(min-width: 980px) {
+        min-width: 130px;
+    }
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0px 10px 42px $muted-4;
+}
+
+.btn:hover {
+    box-shadow: 0px 20px 42px $muted-4 !important;
+}
+.btn-outline-primary, .btn-outline-secondary {
+    border: solid 2px;
+    border-radius: 0;
+    font-size: 1rem;
+    transition: color 0.5s ease-in-out;
+}
+
+.btn-white {
+    color: $light !important;
+    border-color: $light !important;
+  
+}
+
+.btn-outline-secondary {
+    color: $secondary;
+    border-color: $secondary !important;
+}
+
+.btn-outline-primary, .btn-white, .btn-outline-secondary {
+    outline: none !important;
+}
+
+.btn-white:active {
+    background: $primary;
+    border-color: $primary;
+    color: $light !important;
+}
+
+
+.btn-white:visited {
+    background: $light;
+    border-color: $light;
+    color: $light !important;
+}
+
+.btn-white:hover {
+    background: $primary !important;
+    border-color: $primary !important;
+    color: $light !important;
+    outline: none !important;
+}
+
+
+.btn-outline-secondary:active {
+    background: $secondary;
+    border-color: $secondary;
+    color: $secondary !important;
+}
+
+
+.btn-outline-secondary:visited {
+    background: transparent !important;
+    border-color: $secondary;
+    color: $secondary !important;
+}
+
+.btn-outline-secondary:hover {
+    background: $secondary !important;
+    border-color: $secondary !important;
+    color: $light !important;
+    outline: none !important;
+}
+
+
+
+
+#b2top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: $primary;; /* Set a background color */
+    color: $light !important; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    box-shadow: 0px 3px 6px $muted-3 !important;
+    margin:0 auto;
+}
+
+#b2top:hover {
+    color: $light !important;
+
+    i:hover{
+        color: $light !important;
+        transform: translateY(0);
+    }
+}
+
+
+// Shadows 
+
+.shadow-md {
+    box-shadow: 0px 50px 72px $muted-3 !important;
+}
+
+.shadow-md-left {
+    box-shadow: 30px 50px 72px $muted-3 !important;
+}
+
+
+// Icons
+
+.icon-secondary {
+    color: $secondary !important;
+}
+
+i {
+    font-weight: 500;
+    font-size: 1.9rem !important;
+    margin: 2px 10px;
+    width: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icons-effects::after {
+    content: "";
+    height: 3px;
+    width: 50%;
+    //background: $muted-4;
+    display: block;
+    border-bottom: solid 3px $muted-4;
+    border-radius: 70%;
+    margin: 2px auto;
+    margin-top: -4px;
+}
+
+i:hover {
+    color: $primary !important;
+    transform: translateY(-10px);
+}
+
+.ds-social {
+    padding: 10px;
+    display: flex;
+    margin: 10px 5px;
+    justify-content: center;
+
+    i {
+       // background: #fff;
+        //color: #FF2639 !important;
+        font-weight: 500;
+        font-size: 1.9rem !important;
+        //border-radius: 100%;
+        height: 100%;    
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .social-icons::after {
+        content: "";
+        height: 3px;
+        width: 50%;
+        //background: $muted-4;
+        display: block;
+        border-bottom: solid 3px $muted-4;
+        border-radius: 70%;
+        margin: 2px auto;
+        margin-top: -4px;
+        
+    }
+
+    i:hover {
+        color: $primary !important;
+        transform: translateY(-10px);
+    }
+}
+
+// background styling
+
+.bg-hero {
+    background: url('../img/bg-hero.png');
+    background-color: $dark;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: filter 1s ease-in-out;
+}   
+
+.bg-muted {
+    background: $bg-muted;
+}
+
+
+
+// nav
+
+nav {
+    min-height: 100px;
+    background: $secondary;
+    transition: all 0.3s ease-in-out;
+    
+
+    a {
+        color: $light !important;
+        font-weight: 600;
+        letter-spacing: $letter-1;
+    }
+    
+    a:hover {
+        color: $light !important;
+    }
+
+    @media(min-width: 980px) {
+        background: transparent;
+        
+        .nav-item {
+            min-width: 80px;
+            text-align: center;
+        }
+
+        .nav-link:not(:last-child)::after {
+            content: "";
+            height: 2px;
+            width: 0%;
+            background: $primary;
+            display: block;
+            margin: auto;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .cta-login::after {
+            content: "";
+            height: 2px;
+            width: 100%;
+            background: $primary;
+            display: block;
+            margin: auto;
+            transition: width 0.3s ease-in-out;
+        }
+    }
+}
+
+.nav-color {
+    background: $secondary;     
+    box-shadow: 0px 3px 6px $muted-4;
+    
+
+    @media(min-width: 980px) {
+        background: $secondary;
+    }
+}
+
+.mobile-nav {
+    background: $secondary !important;
+    min-height: 100px;
+
+    button:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    button:visited {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+// jumbotron
+
+.jumbotron {
+    //margin-top: 10%;
+
+    @media(min-width: 768px) {
+        
+        .lead {
+            width: 50%;
+            margin: auto;
+        }
+    }
+}
+
+
+// about
+
+.about, .about-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    @media(min-width: 980px) {
+        min-height: 700px;
+
+        h2 {
+            width: 85%;
+        }
+
+        p {
+            width: 85%;
+        }
+    }
+
+    @media(max-width: 700px) {
+        .about-ft {
+            display: none;
+        }
+    }
+}
+
+// benefits  section
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    @media(min-width: 980px) {
+        min-height: 750px;
+    }
+}
+
+
+
+// footer tyling
+
+.footer {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //background: linear-gradient(50deg, #e52d27 10%, #FF2639 51%, #D31027 75%);
+    background: $secondary;
+    color: $light;
+
+    a {
+        color: $light;
+    }
+
+    a:hover {
+        color: rgba($color: $light, $alpha: 0.7) !important;
+    }
+    
+}
+
+.copyright {
+    margin: 5px;
+    letter-spacing: $letter-1;
+    font-weight: 600; 
+}
+
+.footnote-brand {
+    border-bottom: solid 2px $primary;
+    padding-bottom: 3px; 
+    transition: border 0.2s ease-in-out;
+}
+
+.footnote-brand:hover {
+    border-color: rgba($color: $primary, $alpha: 0.7);
+}
+

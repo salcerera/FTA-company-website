@@ -1,0 +1,82 @@
+// Default UI Components Styling
+
+
+// Variables
+
+$font-stack: 'Montserrat', sans-serif;
+$bold: bold;
+$letter-1: 1px;
+$letter-2: 2px;
+$muted-1: rgba(0,0,0,0.7);
+$muted-2: rgba(0,0,0,0.5);
+$muted-3: rgba(0,0,0,0.2);
+$muted-4: rgba(0,0,0,0.16);
+$muted-5: rgba(0,0,0,0.10);
+// Typography
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-stack;
+    font-weight: $bold;
+    letter-spacing: $letter-1;
+}
+
+
+a {
+    text-decoration: none !important;
+}
+
+// Buttons
+
+
+#b2top:hover {
+    color: #fff !important;
+}
+
+
+// DesignStories Cards
+
+.ds-card {
+    border: none !important;
+    box-shadow: 0px 3px 72px $muted-5;
+    margin: 20px 10px;
+    max-width: 310px;
+   // max-height: 350px;
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media(min-width: 980px) {
+        min-width: 280px;
+        min-height: 350px;
+    }
+}
+
+.ds-card-hoverable {
+    transition: all 0.3s ease-in-out;
+}
+
+.ds-card-hoverable:hover {
+    transform: translateY(-20px);
+    box-shadow: 10px 90px 72px $muted-4;
+}
+
+// shadows 
+
+.no-shadow {
+    box-shadow: none !important;
+}
+
+
+// Icons
+
+i, .icons {
+    font-size: 1.5rem !important;
+    display: block;
+    margin: 3px;
+}
+
+// Forms

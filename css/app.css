@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px; }
+
+a {
+  text-decoration: none !important; }
+
+#b2top:hover {
+  color: #fff !important; }
+
+.ds-card {
+  border: none !important;
+  box-shadow: 0px 3px 72px rgba(0, 0, 0, 0.1);
+  margin: 20px 10px;
+  max-width: 310px; }
+  .ds-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  @media (min-width: 980px) {
+    .ds-card {
+      min-width: 280px;
+      min-height: 350px; } }
+
+.ds-card-hoverable {
+  transition: all 0.3s ease-in-out; }
+
+.ds-card-hoverable:hover {
+  transform: translateY(-20px);
+  box-shadow: 10px 90px 72px rgba(0, 0, 0, 0.16); }
+
+.no-shadow {
+  box-shadow: none !important; }
+
+i, .icons {
+  font-size: 1.5rem !important;
+  display: block;
+  margin: 3px; }
+
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+main {
+  min-height: 100vh; }
+
+section {
+  min-height: 100px; }
+
+footer {
+  min-height: 100px; }
+
+h1, h2, h3, h4 {
+  font-weight: 600 !important; }
+
+.section-heading {
+  padding: 20px; }
+  @media (min-width: 980px) {
+    .section-heading {
+      width: 50%;
+      text-align: center; } }
+
+a {
+  color: #FF5F00;
+  transition: color 0.2s ease-in-out !important; }
+
+a:hover {
+  color: rgba(255, 95, 0, 0.7) !important; }
+
+.btn {
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+  letter-spacing: 2px;
+  box-shadow: 0px 10px 42px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  transition: all 1s ease-in-out; }
+
+.btn-sm {
+  font-size: 0.8rem !important;
+  min-width: 100px;
+  font-weight: 600 !important; }
+  @media (min-width: 980px) {
+    .btn-sm {
+      min-width: 130px; } }
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0px 10px 42px rgba(0, 0, 0, 0.16); }
+
+.btn:hover {
+  box-shadow: 0px 20px 42px rgba(0, 0, 0, 0.16) !important; }
+
+.btn-outline-primary, .btn-outline-secondary {
+  border: solid 2px;
+  border-radius: 0;
+  font-size: 1rem;
+  transition: color 0.5s ease-in-out; }
+
+.btn-white {
+  color: #fff !important;
+  border-color: #fff !important; }
+
+.btn-outline-secondary {
+  color: #2B4060;
+  border-color: #2B4060 !important; }
+
+.btn-outline-primary, .btn-white, .btn-outline-secondary {
+  outline: none !important; }
+
+.btn-white:active {
+  background: #FF5F00;
+  border-color: #FF5F00;
+  color: #fff !important; }
+
+.btn-white:visited {
+  background: #fff;
+  border-color: #fff;
+  color: #fff !important; }
+
+.btn-white:hover {
+  background: #FF5F00 !important;
+  border-color: #FF5F00 !important;
+  color: #fff !important;
+  outline: none !important; }
+
+.btn-outline-secondary:active {
+  background: #2B4060;
+  border-color: #2B4060;
+  color: #2B4060 !important; }
+
+.btn-outline-secondary:visited {
+  background: transparent !important;
+  border-color: #2B4060;
+  color: #2B4060 !important; }
+
+.btn-outline-secondary:hover {
+  background: #2B4060 !important;
+  border-color: #2B4060 !important;
+  color: #fff !important;
+  outline: none !important; }
+
+#b2top {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #FF5F00;
+  /* Set a background color */
+  color: #fff !important;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2) !important;
+  margin: 0 auto; }
+
+#b2top:hover {
+  color: #fff !important; }
+  #b2top:hover i:hover {
+    color: #fff !important;
+    transform: translateY(0); }
+
+.shadow-md {
+  box-shadow: 0px 50px 72px rgba(0, 0, 0, 0.2) !important; }
+
+.shadow-md-left {
+  box-shadow: 30px 50px 72px rgba(0, 0, 0, 0.2) !important; }
+
+.icon-secondary {
+  color: #2B4060 !important; }
+
+i {
+  font-weight: 500;
+  font-size: 1.9rem !important;
+  margin: 2px 10px;
+  width: 20px;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out; }
+
+.icons-effects::after {
+  content: "";
+  height: 3px;
+  width: 50%;
+  display: block;
+  border-bottom: solid 3px rgba(0, 0, 0, 0.16);
+  border-radius: 70%;
+  margin: 2px auto;
+  margin-top: -4px; }
+
+i:hover {
+  color: #FF5F00 !important;
+  transform: translateY(-10px); }
+
+.ds-social {
+  padding: 10px;
+  display: flex;
+  margin: 10px 5px;
+  justify-content: center; }
+  .ds-social i {
+    font-weight: 500;
+    font-size: 1.9rem !important;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center; }
+  .ds-social .social-icons::after {
+    content: "";
+    height: 3px;
+    width: 50%;
+    display: block;
+    border-bottom: solid 3px rgba(0, 0, 0, 0.16);
+    border-radius: 70%;
+    margin: 2px auto;
+    margin-top: -4px; }
+  .ds-social i:hover {
+    color: #FF5F00 !important;
+    transform: translateY(-10px); }
+
+.bg-hero {
+  background: url("../img/bg-hero.png");
+  background-color: #333333;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  background-size: cover;
+  background-attachment: fixed;
+  transition: filter 1s ease-in-out; }
+
+.bg-muted {
+  background: #F6F6F6; }
+
+nav {
+  min-height: 100px;
+  background: #2B4060;
+  transition: all 0.3s ease-in-out; }
+  nav a {
+    color: #fff !important;
+    font-weight: 600;
+    letter-spacing: 1px; }
+  nav a:hover {
+    color: #fff !important; }
+  @media (min-width: 980px) {
+    nav {
+      background: transparent; }
+      nav .nav-item {
+        min-width: 80px;
+        text-align: center; }
+      nav .nav-link:not(:last-child)::after {
+        content: "";
+        height: 2px;
+        width: 0%;
+        background: #FF5F00;
+        display: block;
+        margin: auto;
+        transition: width 0.3s ease-in-out; }
+      nav .nav-link:hover::after {
+        width: 100%; }
+      nav .cta-login::after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background: #FF5F00;
+        display: block;
+        margin: auto;
+        transition: width 0.3s ease-in-out; } }
+
+.nav-color {
+  background: #2B4060;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16); }
+  @media (min-width: 980px) {
+    .nav-color {
+      background: #2B4060; } }
+
+.mobile-nav {
+  background: #2B4060 !important;
+  min-height: 100px; }
+  .mobile-nav button:focus {
+    outline: none !important;
+    box-shadow: none !important; }
+  .mobile-nav button:visited {
+    outline: none !important;
+    box-shadow: none !important; }
+
+@media (min-width: 768px) {
+  .jumbotron .lead {
+    width: 50%;
+    margin: auto; } }
+
+.about, .about-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  @media (min-width: 980px) {
+    .about, .about-col {
+      min-height: 700px; }
+      .about h2, .about-col h2 {
+        width: 85%; }
+      .about p, .about-col p {
+        width: 85%; } }
+  @media (max-width: 700px) {
+    .about .about-ft, .about-col .about-ft {
+      display: none; } }
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  @media (min-width: 980px) {
+    .benefits {
+      min-height: 750px; } }
+
+.footer {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #2B4060;
+  color: #fff; }
+  .footer a {
+    color: #fff; }
+  .footer a:hover {
+    color: rgba(255, 255, 255, 0.7) !important; }
+
+.copyright {
+  margin: 5px;
+  letter-spacing: 1px;
+  font-weight: 600; }
+
+.footnote-brand {
+  border-bottom: solid 2px #FF5F00;
+  padding-bottom: 3px;
+  transition: border 0.2s ease-in-out; }
+
+.footnote-brand:hover {
+  border-color: rgba(255, 95, 0, 0.7); }

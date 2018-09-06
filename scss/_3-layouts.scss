@@ -1,0 +1,22 @@
+// Default layout Styling
+
+// section layouts
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  min-height: 100vh;
+}
+
+section {
+  min-height: 100px;
+}
+
+footer {
+  min-height: 100px;
+}
+
