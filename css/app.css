@@ -58,12 +58,10 @@ footer {
 h1, h2, h3, h4 {
   font-weight: 600 !important; }
 
-.section-heading {
-  padding: 20px; }
-  @media (min-width: 980px) {
-    .section-heading {
-      width: 50%;
-      text-align: center; } }
+@media (min-width: 980px) {
+  .section-heading {
+    width: 85%;
+    text-align: center; } }
 
 a {
   color: #FF5F00;
@@ -107,6 +105,7 @@ a:hover {
   border-color: #fff !important; }
 
 .btn-outline-secondary {
+  background: transparent !important;
   color: #2B4060;
   border-color: #2B4060 !important; }
 
@@ -132,7 +131,7 @@ a:hover {
 .btn-outline-secondary:active {
   background: #2B4060;
   border-color: #2B4060;
-  color: #2B4060 !important; }
+  color: #fff !important; }
 
 .btn-outline-secondary:visited {
   background: transparent !important;
@@ -142,7 +141,7 @@ a:hover {
 .btn-outline-secondary:hover {
   background: #2B4060 !important;
   border-color: #2B4060 !important;
-  color: #fff !important;
+  color: #FF5F00 !important;
   outline: none !important; }
 
 #b2top {
@@ -174,12 +173,32 @@ a:hover {
   /* Increase font size */
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2) !important;
   margin: 0 auto; }
+  #b2top a, #b2top i {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5rem !important; }
 
 #b2top:hover {
   color: #fff !important; }
   #b2top:hover i:hover {
     color: #fff !important;
     transform: translateY(0); }
+
+.card-videos {
+  border: none;
+  margin: 7px; }
+
+input, textarea {
+  background: transparent;
+  border: none !important;
+  border-radius: 0 !important;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.2) !important;
+  outline: none;
+  box-shadow: none !important;
+  transition: border 1s ease-in-out; }
+
+input:focus, textarea:focus {
+  border-color: #FF5F00 !important; }
 
 .shadow-md {
   box-shadow: 0px 50px 72px rgba(0, 0, 0, 0.2) !important; }
@@ -244,11 +263,32 @@ i:hover {
   background-repeat: no-repeat;
   background-position: 50% 40%;
   background-size: cover;
-  background-attachment: fixed;
-  transition: filter 1s ease-in-out; }
+  background-attachment: fixed; }
 
 .bg-muted {
   background: #F6F6F6; }
+
+.bg-mastery {
+  background: url("../img/bg-mastery.png");
+  background-color: #333333;
+  background-repeat: no-repeat;
+  background-position: 50% top;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.bg-tribe {
+  background: url("../img/bg-tribe.png");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% bottom;
+  background-size: cover; }
+
+.bg-contact {
+  background: url("../img/bg-contact.png");
+  background-color: #2B4060;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover; }
 
 nav {
   min-height: 100px;
@@ -329,7 +369,78 @@ nav {
   align-items: center; }
   @media (min-width: 980px) {
     .benefits {
-      min-height: 750px; } }
+      min-height: 700px; }
+      .benefits .section-heading {
+        width: 45%; } }
+
+.self-mastery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px; }
+  @media (min-width: 980px) {
+    .self-mastery {
+      min-height: 700px; }
+      .self-mastery .section-heading {
+        width: 85%;
+        padding: 0; }
+      .self-mastery p {
+        width: 85%; } }
+
+.coaches {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .coaches .card {
+    border: none;
+    margin: 20px; }
+    .coaches .card h5 {
+      width: 100%; }
+    .coaches .card p {
+      width: 100%; }
+  @media (min-width: 980px) {
+    .coaches .section-heading {
+      width: 85%;
+      padding: 0; }
+    .coaches p {
+      width: 45%; } }
+
+.tribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 700px; }
+
+.tribe-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  @media (min-width: 980px) {
+    .contact {
+      min-height: 700px; } }
+
+.fta-form form {
+  margin: 0 !important;
+  width: 100%; }
+
+@media (min-width: 980px) {
+  .fta-form .card {
+    min-width: 500px;
+    padding: 40px 50px; } }
 
 .footer {
   min-height: 250px;

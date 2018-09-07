@@ -27,9 +27,9 @@ h1,h2,h3,h4 {
 }
 
 .section-heading {
-    padding: 20px;
+    //padding: 20px;
     @media(min-width: 980px) {
-        width: 50%;
+        width: 85%;
         text-align: center;
     }
 }
@@ -87,6 +87,7 @@ a:hover {
 }
 
 .btn-outline-secondary {
+    background: transparent !important;
     color: $secondary;
     border-color: $secondary !important;
 }
@@ -119,8 +120,8 @@ a:hover {
 .btn-outline-secondary:active {
     background: $secondary;
     border-color: $secondary;
-    color: $secondary !important;
-}
+    color: $light !important;
+}   
 
 
 .btn-outline-secondary:visited {
@@ -132,7 +133,7 @@ a:hover {
 .btn-outline-secondary:hover {
     background: $secondary !important;
     border-color: $secondary !important;
-    color: $light !important;
+    color: $primary !important;
     outline: none !important;
 }
 
@@ -155,6 +156,12 @@ a:hover {
     font-size: 18px; /* Increase font size */
     box-shadow: 0px 3px 6px $muted-3 !important;
     margin:0 auto;
+    
+    a, i {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.5rem !important;
+    }
 }
 
 #b2top:hover {
@@ -166,6 +173,28 @@ a:hover {
     }
 }
 
+// cards
+
+.card-videos {
+    border: none;
+    margin: 7px;
+}
+
+// forms
+
+input, textarea {
+    background: transparent;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: solid 2px $muted-3 !important;
+    outline: none;
+    box-shadow: none !important;
+    transition: border 1s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: $primary !important;
+}
 
 // Shadows 
 
@@ -257,14 +286,36 @@ i:hover {
     background-position: 50% 40%;
     background-size: cover;
     background-attachment: fixed;
-    transition: filter 1s ease-in-out;
 }   
 
 .bg-muted {
     background: $bg-muted;
 }
 
+.bg-mastery {
+    background: url('../img/bg-mastery.png');
+    background-color: $dark;
+    background-repeat: no-repeat;
+    background-position: 50% top;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
+.bg-tribe {
+    background: url('../img/bg-tribe.png');
+    background-color: $light;
+    background-repeat: no-repeat;
+    background-position: 50% bottom;
+    background-size: cover;
+}
+
+.bg-contact {
+    background: url('../img/bg-contact.png');
+    background-color: $secondary;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
 
 // nav
 
@@ -392,11 +443,120 @@ nav {
     align-items: center;
     
     @media(min-width: 980px) {
-        min-height: 750px;
+        min-height: 700px;
+
+        .section-heading {
+            width: 45%;
+        }
+    }
+}
+
+// self-mastery
+
+.self-mastery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+
+    @media(min-width: 980px) {
+        min-height: 700px;
+
+        .section-heading {
+            width: 85%;
+            padding: 0;
+        }
+
+        p {
+            width: 85%;
+        }
     }
 }
 
 
+// coaches and mentors
+
+.coaches {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+        border: none;
+        margin: 20px;
+
+        h5 {
+            width: 100%;
+        }
+        
+        p {
+            width: 100%;
+        }
+    }
+
+    @media(min-width: 980px) {
+        .section-heading {
+            width: 85%;
+            padding: 0;
+        }
+
+        p {
+            width: 45%;
+        }
+    }
+}
+
+
+// tribe
+
+.tribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 700px;
+}
+
+.tribe-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// contact 
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //lign-items: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media(min-width: 980px) {
+        min-height: 700px;
+    }
+}
+
+.fta-form {
+    form {
+        margin: 0 !important;
+        width: 100%;
+    }
+    
+    @media(min-width: 980px) {
+        .card {
+            min-width: 500px;
+            padding: 40px 50px;
+        }
+    }
+}
 
 // footer tyling
 

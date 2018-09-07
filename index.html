@@ -21,20 +21,29 @@
 
   </head>
   <body>
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=174209469628&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#"><img class="logo" src="img/icons/logo.png" alt="Fast Track Academy Logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand smooth-scroll" href="#home"><img class="logo" src="img/icons/logo.png" alt="Fast Track Academy Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">About</a>
-            <a class="nav-item nav-link" href="#">Self-Mastery</a>
-            <a class="nav-item nav-link" href="#">Coaches</a>
-            <a class="nav-item nav-link" href="#">Tribe</a>
-            <a class="nav-item nav-link" href="#">Contact</a>
+            <a class="nav-item nav-link smooth-scroll" href="#home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link smooth-scroll" href="#about">About</a>
+            <a class="nav-item nav-link smooth-scroll" href="#self-mastery">Self-Mastery</a>
+            <a class="nav-item nav-link smooth-scroll" href="#coaches">Coaches</a>
+            <a class="nav-item nav-link smooth-scroll" href="#tribe">Tribe</a>
+            <a class="nav-item nav-link smooth-scroll" href="#contact">Contact</a>
             <a class="nav-item nav-link cta-login" href="#">Members Area</a>
           </div>
         </div>
@@ -46,13 +55,13 @@
         <div class="container">
           <h1 class="display-4">Fast Track Academy</h1>
           <p class="lead mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam et earum adipisci, nostrum at possimus.</p>
-          <a href="#" class="btn btn-outline-primary btn-lg btn-white" id="story">Learn More</a>
+          <a href="#about" class="btn btn-outline-primary btn-lg btn-white smooth-scroll">Learn More</a>
         </div>
       </div> <!-- end jumbotron -->
     </header> <!-- end header -->
   
     <main role="main" id="main" class="bg-white">
-      <section class="about bg-white py-5">
+      <section class="about bg-white py-5" id="about">
         <div class="container">
           <div class="row">
             <div class="col-sm-6 order-sm-2 about-col about-ft">
@@ -67,7 +76,7 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt laboriosam rerum eligendi, excepturi, necessitatibus mollitia veritatis similique velit, nostrum ad atque sed omnis laborum magni.
               </p>
               <p class="my-3">
-                  <a href="#" class="social-icons text-center"><i class="fab fa-facebook icon-secondary"></i></a>
+                  <a href="https://www.facebook.com/FastTrackAcademyPH/" target="_blank" class="social-icons text-center"><i class="fab fa-facebook icon-secondary"></i></a>
                   <a href="#" class="social-icons text-center"><i class="fab fa-instagram icon-secondary"></i></a>
               </p>
             </div>
@@ -75,11 +84,11 @@
         </div>
       </section> <!-- end section -->
 
-      <section class="benefits bg-muted py-5">
+      <section class="benefits bg-muted py-5" id="benefits">
         <div class="container">
           <div class="row justify-content-center">
-            <h2 class="mb-3 section-heading">A few things that the Academy offers</h2>
-            <div class="card-deck">
+            <h2 class="my-3 section-heading mx-3 mb-5">A few things that the Academy offers</h2>
+            <div class="card-deck mb-5">
               <div class="card ds-card ds-card-hoverable">
                 <div class="card-body">
                   <img class="my-3" src="img/icons/coach.svg" srcset="img/icons/coach.svg 1x" alt="icon" width="60px" height="60px">
@@ -87,35 +96,252 @@
                   <p class="card-text text-center mb-3">
                     A lot of great minds willing to guide you anytime.
                   </p>
-                  <a href="#" class="btn btn-outline-secondary btn-sm no-shadow">Coaches</a>
+                  <a href="#coaches" class="btn btn-outline-secondary btn-sm no-shadow smooth-scroll">Coaches</a>
                 </div>
-              </div>
+              </div> <!-- end card -->
   
               <div class="card ds-card ds-card-hoverable">
                 <div class="card-body">
                   <img class="my-3" src="img/icons/community.svg" srcset="img/icons/community.svg 1x" alt="icon" width="60px" height="60px">
                   <h5 class="card-title text-center">Great Community</h5>
-                  <p class="card-text text-center">
+                  <p class="card-text text-center mb-3">
                     A community of positive people and aspiring entrepreneurs.
                   </p>
-                  <a href="#" class="btn btn-outline-secondary btn-sm no-shadow">Tribe</a>
+                  <a href="#tribe" class="btn btn-outline-secondary btn-sm no-shadow smooth-scroll">Tribe</a>
                 </div>
-              </div>
+              </div> <!-- end card -->
   
               <div class="card ds-card ds-card-hoverable">
                 <div class="card-body">
                   <img class="my-3" src="img/icons/live_video.svg" srcset="img/icons/live_video.svg 1x" alt="icon" width="60px" height="60px">
                   <h5 class="card-title text-center">Weekly Live Shows</h5>
                   <p class="card-text text-center">
-                    We host live shows to provide tips,reviews and inspring stories
+                    We host live shows to provide tips, reviews and inspring stories
                   </p>
-                  <a href="#" class="btn btn-outline-secondary btn-sm no-shadow">Videos</a>
+                  <a href="#tribe-videos" class="btn btn-outline-secondary btn-sm no-shadow smooth-scroll">Videos</a>
+                </div>
+              </div> <!-- end card -->
+
+            </div> <!-- end card deck -->
+          </div> <!-- end row -->
+        </div> <!-- end container -->
+      </section> <!-- end section -->
+
+      <section class="self-mastery bg-mastery py-5" id="self-mastery">
+        <div class="container">
+          <div class="row justify-content-center text-white">
+            <div class="col-sm-6 order-sm-2">
+              <img src="img/updated-product.png" alt="self-mastery product image" class="img-fluid db-block">
+            </div> <!-- end col -->
+
+            <div class="col-sm-6">
+              <h2 class="my-3 section-heading text-left">Self Mastery &amp; Entrepreneurship Intensive Masterclass</h2>
+              <p class="lead mb-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius ipsum orci, a ultricies tellus porta id. Phasellus nec elit quam. Nulla mi leo, sollicitudin a venenatis et, consectetur ac orci. 
+              </p>
+              <a href="https://fasttrackacademy.ph/selfmastery/" target="_blank" class="btn btn-outline-primary btn-white">Learn More</a>
+            </div> <!-- end col -->
+          </div> <!-- end row -->
+        </div> <!-- end container -->
+      </section> <!-- end section -->
+
+      <section class="coaches bg-white py-5" id="coaches">
+        <div class="container">
+          <div class="row justify-content-center">
+              <h2 class="my-3 section-heading mt-5">Coaches &amp; Mentors</h2>
+              <p class="lead text-muted mb-5 text-center">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quia odit deleniti voluptate, aut expedita reprehenderit libero aliquid ex sint?
+              </p>
+          </div> <!-- end row -->
+
+          <div class="row justify-content-center my-5">
+            <div class="col-sm-6">
+              <div class="card">
+                <img src="img/coach_james.png" alt="" class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title">James Guillera</h5>
+                  <p class="card-text">Co-Founder of Fast Track Academy</p>
+                  <p class="my-3">
+                      <a href="#" class="social-icons text-center"><i class="fab fa-facebook icon-secondary"></i></a>
+                      <a href="#" class="social-icons text-center"><i class="fab fa-instagram icon-secondary"></i></a>
+                  </p>
                 </div>
               </div>
-            </div>
+            </div> <!-- end col -->
+
+            <div class="col-sm-6">
+              <div class="card">
+                <img src="img/coach_rey.png" alt="" class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Rey Valeriano</h5>
+                  <p class="card-text">Co-Founder of Fast Track Academy</p>
+                  <p class="my-3">
+                      <a href="#" class="social-icons text-center"><i class="fab fa-facebook icon-secondary"></i></a>
+                      <a href="#" class="social-icons text-center"><i class="fab fa-instagram icon-secondary"></i></a>
+                  </p>
+                </div>
+              </div>
+            </div> <!-- end col -->
+
+            <div class="col-sm-6">
+              <div class="card">
+                <img src="img/coach_rey.png" alt="" class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Rey Valeriano</h5>
+                  <p class="card-text">Co-Founder of Fast Track Academy</p>
+                  <p class="my-3">
+                      <a href="#" class="social-icons text-center"><i class="fab fa-facebook icon-secondary"></i></a>
+                      <a href="#" class="social-icons text-center"><i class="fab fa-instagram icon-secondary"></i></a>
+                  </p>
+                </div>
+              </div>
+            </div> <!-- end col -->
+
+            <div class="col-sm-6">
+              <div class="card">
+                <img src="img/coach_james.png" alt="" class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title">James Guillera</h5>
+                  <p class="card-text">Co-Founder of Fast Track Academy</p>
+                  <p class="my-3">
+                      <a href="#" class="social-icons text-center"><i class="fab fa-facebook icon-secondary"></i></a>
+                      <a href="#" class="social-icons text-center"><i class="fab fa-instagram icon-secondary"></i></a>
+                  </p>
+                </div>
+              </div>
+            </div> <!-- end col -->
+
+          </div> <!-- end row -->
+
+        </div> <!-- end container -->
+      </section> <!-- end section -->
+
+      <section class="tribe bg-tribe py-5" id="tribe">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 my-3">
+                <img src="img/ft_tribe.png" alt="Featured Image Tribe" class="img-fluid d-block shadow-md-left">
+            </div> <!-- end col -->
+
+            <div class="col-sm-6 my-3">
+              <h2 class="my-3 section-heading text-left">Fast Track Tribe</h2>
+              <p class="text-muted">
+                  This is an “online neighbourhood” for high-achievers who want to connect, push each other, and unleash their full potential. Fast Track Tribe is an online meeting place for people who refuse to settle for a mediocre life. 
+              </p>
+              <p class="mb-5 text-muted">
+                  It’s made up of ordinary Filipino entrepreneurs, aspiring to be an entrepreneur, OFWs, employees, marketers and a lot more. A highly motivated and inspired individuals that aims to be successful from all walks of life.
+              </p>
+              <a href="https://www.facebook.com/groups/fasttracktribe" target="_blank" class="btn btn-outline-secondary">Join Now</a>
+            </div> <!-- end col -->
+
           </div>
         </div>
       </section>
+
+      <section class="tribe-videos bg-white py-5" id="tribe-videos">
+        <div class="container">
+          <div class="row justify-content-center mx-2">
+            <h2 class="my-3 section-heading mt-5">Fast Track Tribe Shows</h2>
+          </div>
+          <div class="row my-5">
+            <div class="col-sm-6 my-3">
+              <div class="card card-videos ">
+                <div class="card-img-top">
+                  <div class="fb-video" data-href="https://www.facebook.com/FastTrackAcademyPH/videos/2036478703284098/"    data-width="500" data-show-text="false"  data-allowfullscreen="true"
+                    data-autoplay="false" data-show-captions="true">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Join Fast Track Tribe</h5>
+                  <p class="text-muted">Gusto mo bang ma-unleash ang 'yung <strong>full potential to achieve real success?</strong> Be part of the <strong>Fast Track Tribe Now for free!! yes for Free!!!</strong></p>
+                  <p class="card-text"><small class="text-muted">Uploaded on Friday, June 29, 2018</small></p>
+                </div>
+              </div>
+            </div> <!-- end col -->
+
+            <div class="col-sm-6 my-3">
+              <div class="card card-videos ">
+                <div class="card-img-top">
+                  <div class="fb-video" data-href="https://www.facebook.com/FastTrackAcademyPH/videos/2037881086477193/"    data-width="500" data-show-text="false"  data-allowfullscreen="true"
+                    data-autoplay="false" data-show-captions="true">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Join Fast Track Tribe</h5>
+                  <p class="text-muted">What if may isang <strong>tribo</strong> ng mga successful and inspiring filipinos' na handang tumulong at mag-share ng kanilang <strong>secrets</strong> sa mga taong willing matuto ng <strong>libre?</strong></p>
+                  <p class="card-text"><small class="text-muted">Uploaded on Sunday, July 1, 2018</small></p>
+                </div>
+              </div>
+            </div>  <!-- end col -->
+
+            <div class="col-sm-6 my-3">
+              <div class="card card-videos">
+                <div class="card-img-top">
+                  <div class="fb-video" data-href="https://www.facebook.com/FastTrackAcademyPH/videos/2079003065698328/"    data-width="500" data-show-text="false" data-allowfullscreen="true"
+                    data-autoplay="false" data-show-captions="true"></div>
+                </div>
+                <div class="card-body ">
+                  <h5 class="card-title">Paano mo makukuha ang DREAMS mo?</h5>
+                  <p class="text-muted">
+                      <strong> (Watch this FREE Bonus Video)</strong>
+                      Para masimulan mo na ang pag-abot sa mataas mong pangarap, click this link para makasama ka namin sa Academy</p>
+                  <p class="card-text"><small class="text-muted">Uploaded on Thursday, August 9, 2018</small></p>
+                </div>
+              </div>
+            </div> <!-- end col -->
+
+            <div class="col-sm-6 my-3 tribe-cta">
+              <div class="card card-videos">
+                <div class="card-body">
+                  <h5 class="card-title">More Videos?</h5>
+                  <p class="card-text mb-5">To access more videos, join Fast Track Tribe</p>
+                  <a href="https://www.facebook.com/groups/fasttracktribe" target="_blank" class="btn btn-outline-secondary">Join Now</a>
+                </div>
+              </div>
+            </div> <!-- end col -->
+
+          </div> <!-- end row -->
+        </div> <!-- end container -->
+      </section> <!-- end section -->
+
+      <section class="contact bg-contact py-5" id="contact">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-5 text-white contact-info">
+              <h2 class="my-3 section-heading text-left">Need more information?</h2>
+              <p class="lead">
+                If you have questions or clarifications please do not hesitate to reach out. You can contact us
+                via Facebook or send us an email at sample@fasttrackacademy.ph or just simply use the contact form on this section.
+              </p>
+            </div> <!-- end col -->
+
+            <div class="col-sm-7 fta-form">
+              <div class="card ds-card bg-white mx-auto "> 
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Contact Form</h5>
+                  <form class="py-3">
+                      <div class="form-group">
+                          <input type="text" class="form-control bline" id="formGroupExampleInput" placeholder="Enter name">
+                      </div>
+                      
+                      <div class="form-group">
+                          <input type="email" class="form-control bline" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      </div>
+                      
+                      <div class="form-group">
+                          <textarea class="form-control bline" id="exampleFormControlTextarea1" rows="5" placeholder="Enter message"></textarea>
+                      </div>
+                      <br>
+                      <button type="submit" class="btn btn-outline-secondary btn-block">Send Message</button>
+                  </form>
+                </div>
+              </div>
+            </div> <!-- end col -->
+
+          </div> <!-- end row -->
+        </div> <!-- end container -->
+      </section> <!-- end section -->
+
     </main> <!-- end main -->
 
     <!-- Back to top button -->
@@ -126,10 +352,10 @@
         <div class="container">
           <h4 class="text-center">Follow Us</h4>
           <div class="ds-social">
-              <a href="#" class="social-icons text-center"><i class="fab fa-facebook text-white"></i></a>
+              <a href="https://www.facebook.com/FastTrackAcademyPH/" target="_blank" class="social-icons text-center"><i class="fab fa-facebook text-white"></i></a>
               <a href="#" class="social-icons text-center"><i class="fab fa-instagram text-white"></i></a>
           </div>
-          <small class="copyright">&copy; 2018 <a href="#" class="footnote-brand">Fast Track Academy</a>. All rights reserved.</small>
+          <small class="copyright">&copy; 2018 <a href="https://www.facebook.com/FastTrackAcademyPH/" target="_blank" class="footnote-brand">Fast Track Academy</a>. All rights reserved.</small>
         </div> <!-- end container -->
     </footer> <!-- end footer -->
 
