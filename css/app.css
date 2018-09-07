@@ -462,6 +462,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  z-index: 4000 !important;
   background: #2B4060;
   color: #fff; }
   .footer a {
