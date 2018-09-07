@@ -264,6 +264,9 @@ i:hover {
   background-position: 50% 40%;
   background-size: cover;
   background-attachment: fixed; }
+  @media (max-width: 600px) {
+    .bg-hero {
+      background-position: 52% 40%; } }
 
 .bg-muted {
   background: #F6F6F6; }
@@ -293,7 +296,9 @@ i:hover {
 nav {
   min-height: 100px;
   background: #2B4060;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 4000 !important; }
   nav a {
     color: #fff !important;
     font-weight: 600;
@@ -342,10 +347,19 @@ nav {
     outline: none !important;
     box-shadow: none !important; }
 
-@media (min-width: 768px) {
-  .jumbotron .lead {
-    width: 50%;
-    margin: auto; } }
+main {
+  position: relative;
+  z-index: 3000 !important; }
+
+.jumbotron {
+  margin-top: 90px; }
+  @media (min-width: 980px) {
+    .jumbotron {
+      margin-top: 120px; } }
+  @media (min-width: 768px) {
+    .jumbotron .lead {
+      width: 50%;
+      margin: auto; } }
 
 .about, .about-col {
   display: flex;

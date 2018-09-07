@@ -11,12 +11,29 @@ $(document).ready(function() {
     });
 });
 
+// parallax
+
+$(window).scroll(function() {
+    var t = $(this).scrollTop();
+    $(".motion").css({
+        transform: "translate(0px, " + t / 5 + "%)"
+    }), $(".motion-nav").css({
+        transform: "translate(0px, " + t / 4 + "%)"
+    }), $(".mynav").css({
+        opacity: "0.5"
+    }, 500), $(".parallax").css({
+        filter: "blur(" + t / 4 + "%)"
+    }), t < 1 && $(".mynav").css({
+        opacity: "1"
+    }, 200)
+}), 
+
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
     var $win = $(window);
     var winH = $win.height();
 
-    if (scroll >= 280) {
+    if (scroll >= 200) {
         //$(".navbar").addClass("fixed-top");
         $(".navbar").animate({'opacity':'1'},1000);
         $(".navbar").css({'min-height':'70px'},1000);
