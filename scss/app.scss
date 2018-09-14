@@ -156,6 +156,7 @@ a:hover {
     font-size: 18px; /* Increase font size */
     box-shadow: 0px 3px 6px $muted-3 !important;
     margin:0 auto;
+    z-index: 5000;
     
     a, i {
         text-align: center;
@@ -235,7 +236,7 @@ i {
     margin-top: -4px;
 }
 
-i:hover {
+i.social:hover {
     color: $primary !important;
     transform: translateY(-10px);
 }
@@ -328,7 +329,7 @@ nav {
     background: $secondary;
     transition: all 0.3s ease-in-out;
     position: relative;
-    z-index: 4000 !important;;
+    z-index: 4000 !important;
     
 
     a {
@@ -468,6 +469,48 @@ main {
     }
 }
 
+// freebies
+
+.freebies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .col-freebies {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.fta_list {
+    display: block;
+    padding: 0 !important;
+
+    li {
+        list-style: none !important;
+        padding: 10px !important;
+        display: flex;
+        height: 50px;
+
+        i {
+            margin-right: 20px;
+        }
+
+        .lead {
+            font-weight: bold;
+        }
+    }
+
+
+    i {
+        color: $primary;
+    }
+}
+
+
+
 // self-mastery
 
 .self-mastery {
@@ -585,6 +628,8 @@ main {
     //background: linear-gradient(50deg, #e52d27 10%, #FF2639 51%, #D31027 75%);
     background: $secondary;
     color: $light;
+    position: relative;
+    z-index: 4900 !important;
 
     a {
         color: $light;
